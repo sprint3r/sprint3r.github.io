@@ -8,12 +8,30 @@ body {
 /* Header */
 
 .header {
+  padding-top: 0px;
   width: 100%;
   background-image: url("images/main3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+
+@media(min-width:767px) {
+    .header {
+      padding-top: 90px;
+    }
+
+    .navbar {
+        padding: 10px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+  }
 
 .site-logo {
   padding-top: 5px;
@@ -28,6 +46,8 @@ body {
 .jumbotron {
   background-color: transparent;
   margin-bottom: 0px;
+  padding-bottom: 108px;
+  padding-top: 108px;
 }
 
 .site-logo-big {
@@ -43,17 +63,38 @@ body {
   color: white;
 }
 
-.content-section {
-  height: 100%;
+.row-equal-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+
+.section-header-wrapper {
+  margin: auto;
 }
 
 .section-header {
-  vertical-align: middle;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .section-icon {
   font-size: 40pt;
   color: black;
+}
+
+.section-header h2 {
+  vertical-align: middle;
+  color: black;
+}
+
+.section-header a {
+  text-decoration: none;
+  color: #990100;
 }
 
 /* Footer */
@@ -64,22 +105,6 @@ body {
   background-color: grey;
 }
 
-/* GMap */
-
-.map iframe {
-  margin: 20px 0px 20px 0px;
-  height: 450px;
-  width: 100%;
-}
-
-@media (min-width: 768px) {
-  .map iframe {
-    margin: 20px 0px 20px 0px;
-    height: 450px;
-    width: 80%;
-  }
-}
-
 /* Team */
 
 .team-header {
@@ -87,8 +112,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 48px;
-  background-color: #EEEEEE;
+  background-color: #DDDDDD;
 }
 
 .team-header h2 {
@@ -97,7 +121,7 @@ body {
 }
 
 .team {
-  background-color: #EEEEEE;
+  background-color: #DDDDDD;
   padding-bottom: 48px;
 }
 
@@ -121,4 +145,36 @@ p.title {
   color: white;
   background-color: #990100;
   border-color: #990100;
+}
+
+/* Contact */
+
+.contact {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+a.link {
+  font-size: 15pt;
+}
+
+@media (min-width: 992px) {
+  .section-header-contact {
+    height: 480px;
+    display: flex;
+  }
+}
+
+.contact iframe {
+  margin: 20px 0px 20px 0px;
+  height: 450px;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .contact iframe {
+    margin: 20px 0px 20px 0px;
+    height: 450px;
+    width: 80%;
+  }
 }
