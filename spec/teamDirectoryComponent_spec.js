@@ -16,7 +16,7 @@ describe("Team Directory", function() {
     $httpBackend.flush();
   });
 
-  it("should return arrays of with given number of items from list", function() {
+  it("should return array of arrays which consist of 3 or less items each from provided list", function() {
     rawList = [{"value": "1"}, {"value": "2"}, {"value": "3"}, {"value": "4"}, {"value": "5"}, {"value": "6"}, {"value": "7"}];
     result = ctrl.getListInSetOf(rawList, 3);
     expect(result).toEqual(
