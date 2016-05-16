@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SPRINT3r | Developing a software should be fun</title>
+    <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/25f246f596.js"></script>
+    <script src="./../node_modules/angular/angular.min.js" charset="utf-8"></script>
+    <script src="components/teamDirectoryComponent.js" charset="utf-8"></script>
+  </head>
+  <body ng-app="sprint3rApp">
+    <div class="header">
+      <nav class="navbar">
+        <div class="container">
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a>Team</a></li>
+              <li><a>Events</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="jumbotron home">
+        <div class="container">
+          <img class="site-logo-big" src="images/sprint3r-white.png">
+          <p>เราคือกลุ่มคนที่เชื่อว่า</p>
+          <p>"การทำ Software ต้องสนุก"</p>
+          <p>"เราต้องพัฒนาและฝึกฝนตนเองอยู่เสมอ"</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="team-header">
+      <div class="container">
+        <h2>Team</h2>
+      </div>
+    </div>
+
+    <div class="team">
+      <div class="container">
+        <team-directory col="3"></team-directory>
+      </div>
+    </div>
+
+    <div class="map">
+      <div class="container">
+        <div class="row">
+          <div class="content-section col-md-3">
+            <div class="section-header">
+              <i class="fa fa-5x fa-map-marker section-icon" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="content-section col-md-9">
+            <iframe
+              width="600"
+              height="450"
+              frameborder="0" style="border:0"
+              src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDsqtPpT-SpX6ONceXPfYLrgK7Xe2yiQOc&q=Geeky+Base" allowfullscreen>
+            </iframe>
+            <p class="contact">
+              <a href="https://www.facebook.com/SPRINT3RGroup/?fref=ts"><i class="fa fa-facebook-official icon" aria-hidden="true"></i> &nbsp; SPRINT3RGroup</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

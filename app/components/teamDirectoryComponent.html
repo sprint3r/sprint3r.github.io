@@ -1,0 +1,8 @@
+<div class="row" ng-repeat="profiles in $ctrl.list">
+  <div class="col-md-{{12 / $ctrl.col}} team-profile" ng-repeat="profile in profiles">
+    <img class="img-circle" ng-src="{{profile.image}}">
+    <p class="title">{{profile.name}}</p>
+    <p>{{profile.intro}}</p>
+    <a href="{{profile.media.link}}" class="btn btn-default btn-sm profile-btn" ng-show="profile.media">{{profile.media.name}}</a>
+  </div>
+</div>
