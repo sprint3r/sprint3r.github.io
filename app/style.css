@@ -13,7 +13,33 @@ body {
   background-image: url("images/main3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: center top;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-color: transparent;
+  min-height: 40px;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  background-color: white;
+}
+
+.top-nav-collapse {
+  background-color: white;
+}
+
+.top-nav-collapse .navbar-nav>li>a {
+  color: #777;
+}
+
+.navbar-toggle {
+  background-color: #DDD;
 }
 
 @media(min-width:767px) {
@@ -21,11 +47,18 @@ body {
       padding-top: 90px;
     }
 
-    .navbar {
-        padding: 10px 0;
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    .navbar-default .navbar-nav>li>a {
+      padding: 20px 15px;
+      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse .navbar-nav>li>a {
+      padding: 10px 15px;
+      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+      transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
     .top-nav-collapse {
