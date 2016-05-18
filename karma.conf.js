@@ -8,8 +8,9 @@ module.exports = function (config) {
     files: [
       'node_modules/angular/*.min.js',
       'node_modules/angular-mocks/angular-mocks.js',
+      'app/module.js',
+      'app/components/**/*.js',
       'spec/**/*.js',
-      'app/**/*.js',
     ],
   });
 };

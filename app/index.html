@@ -9,7 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://use.fontawesome.com/25f246f596.js"></script>
     <script src="./../node_modules/angular/angular.min.js" charset="utf-8"></script>
+    <script src="module.js" charset="utf-8"></script>
     <script src="components/teamDirectoryComponent.js" charset="utf-8"></script>
+    <script src="components/eventListComponent.js" charset="utf-8"></script>
   </head>
   <body ng-app="sprint3rApp" id="top" data-spy="scroll" data-target=".navbar-fixed-top">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -26,6 +28,7 @@
         <div id="navbar" class="navbar-collapse collapse navbar-ex1-collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a class="page-scroll" href="#team">Craftsmen</a></li>
+            <li><a class="page-scroll" href="#event">Events</a></li>
             <li><a class="page-scroll" href="#contact">Geeky Base</a></li>
           </ul>
         </div>
@@ -45,7 +48,7 @@
     </section>
 
     <section id="team">
-      <div class="team-header">
+      <div class="full-header team-header">
         <div class="container">
           <h2>Craftsmen</h2>
         </div>
@@ -57,6 +60,27 @@
         </div>
       </div>
     </section>
+
+    <section id="event">
+      <div class="full-header event-header">
+        <div class="container">
+          <h2>Upcoming Events</h2>
+        </div>
+      </div>
+
+      <div class="event">
+        <div class="container">
+          <event-list></event-list>
+        </div>
+      </div>
+
+      <div class="full-footer event-footer">
+        <div class="container">
+          <h2><a href="https://facebook.com/geekybase/events">Check out more events >></a></h2>
+        </div>
+      </div>
+    </section>
+
 
     <section id="contact">
       <div class="contact">

@@ -20,7 +20,7 @@
     };
   }
 
-  angular.module('sprint3rApp', [])
+  angular.module('sprint3rApp')
     .component('teamDirectory', {
       templateUrl: 'components/teamDirectoryComponent.html',
       controller: teamDirectoryController,
