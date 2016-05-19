@@ -10,8 +10,8 @@
       </div>
       <div class="event-detail">
         <div class="event-date">
-          <p class="month">{{)}}</p>
-          <p class="date">{{}}</p>
+          <p class="month">{{event.date | date:'MMM'}}</p>
+          <p class="date">{{event.date | date:'d'}}</p>
         </div>
         <div class="event-description">
           <p>{{event.description}}</p>

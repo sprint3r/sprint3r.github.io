@@ -18,7 +18,7 @@ describe("Event List", function() {
     return {
       "data": [
         {
-          "name": "Test",
+          "name": "Passed",
           "start_time": "2016-05-01T09:00:00+0700",
           "end_time": "2016-05-01T10:00:00+0700",
           "id": 851344918315730,
@@ -29,7 +29,7 @@ describe("Event List", function() {
           },
         },
         {
-          "name": "Test",
+          "name": "A",
           "start_time": "2020-05-30T09:00:00+0700",
           "end_time": "2020-05-30T10:00:00+0700",
           "id": 851344918315731,
@@ -42,6 +42,7 @@ describe("Event List", function() {
       ]
     };
   }
+
 
   function fetchAPIWithData(data) {
     spyOn($http, "get").and.returnValue($q.resolve(
@@ -76,5 +77,40 @@ describe("Event List", function() {
     expect(ctrl.upcomingEvents[0].date).toEqual(new Date("2020-12-01T09:00:00+0700"));
   });
 
+  it("should have upcoming events with results of C, B, A", function() {
+    var data = getFacebookEvents();
+    var extendedData = [
+      {
+        "name": "B",
+        "start_time": "2020-05-12T09:00:00+0700",
+        "end_time": "2020-05-12T10:00:00+0700",
+        "id": 851344918315729,
+        "cover": {
+          "offset_x": 0,
+          "offset_y": 0,
+          "source": "",
+        },
+      },
+      {
+        "name": "C",
+        "start_time": "2020-05-01T09:00:00+0700",
+        "end_time": "2020-05-01T10:00:00+0700",
+        "id": 851344918315728,
+        "cover": {
+          "offset_x": 0,
+          "offset_y": 0,
+          "source": "",
+        },
+      }
+    ];
+    data.data.push(extendedData[0], extendedData[1]);
 
+    fetchAPIWithData(data);
+    var namesInOrder = [];
+    namesInOrder.push(ctrl.upcomingEvents[0].name);
+    namesInOrder.push(ctrl.upcomingEvents[1].name);
+    namesInOrder.push(ctrl.upcomingEvents[2].name);
+
+    expect(namesInOrder).toEqual(["C", "B", "A"]);
+  });
 });

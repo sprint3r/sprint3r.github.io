@@ -10,8 +10,8 @@
       $http.get(apiEndpoint, {
       })
         .then(function(result) {
-          self.upcomingEvents = result.data.data.filter(isStartTimeAfterNow);
-          self.upcomingEvents.forEach(addDate);
+          self.upcomingEvents = result.data.data.filter(isStartTimeAfterNow).map(addDate);
+          self.upcomingEvents.sort(compareDate);
       });
     };
 
@@ -19,8 +19,14 @@
       return new Date(event.start_time) >= new Date();
     }
 
-    function addDate(event, index, events) {
-      events[index].date = new Date(event.start_time);
+
+    function addDate(event) {
+      event.date = new Date(event.start_time);
+      return event;
+    }
+
+    function compareDate(eventA, eventB) {
+      return eventA.date - eventB.date;
     }
   }
 
