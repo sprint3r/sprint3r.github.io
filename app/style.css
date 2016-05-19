@@ -235,6 +235,11 @@ p.title {
 
 }
 
+.event-cover > h2 > a {
+  text-decoration: none;
+  color: white;
+}
+
 .event-cover > h2 {
   margin: 0px 0px;
   padding: 20px 20px;
