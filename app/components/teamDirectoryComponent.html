@@ -1,5 +1,4 @@
-<div class="row" ng-repeat="profiles in $ctrl.list">
-  <div class="col-md-{{12 / $ctrl.col}} team-profile" ng-repeat="profile in profiles">
+  <div class="col-md-{{12 / $ctrl.col}} col-sm-4 team-profile" ng-repeat="profile in $ctrl.list">
     <img class="img-circle" ng-src="{{profile.image}}">
     <p class="title">{{profile.name}}</p>
     <p>{{profile.intro}}</p>

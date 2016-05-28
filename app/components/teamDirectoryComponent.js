@@ -4,17 +4,8 @@
 
     self.$onInit = function () {
       $http.get('team.json').then(function(result) {
-        self.list = self.getListInSetOf(result.data, self.col);
+        self.list = result.data;
       });
-    };
-
-    self.getListInSetOf = function(originalList, number) {
-      var result = [];
-      for (var i = 0; i < originalList.length / number; i ++) {
-        var start = i * number;
-        result.push(originalList.slice(start, start + number));
-      }
-      return result;
     };
   }
 
