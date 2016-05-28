@@ -25,5 +25,23 @@
          "name": "Blog",
          "link": "https://storylog.co/juacompe"
      }
+  },
+  {
+    "name": "Twin Panichsombat",
+    "intro": "Software development should be fun",
+    "image": "images/team/roofimon.jpg",
+    "media": {
+      "name": "Blog",
+      "link": "http://roofimon.com"
+    }
+  },
+  {
+     "name": "Phongsak Ritpitakphong",
+     "intro": "Business value and technical excellence balancer",
+     "image": "images/team/poorprogrammer.png",
+     "media": {
+         "name": "Blog",
+         "link": "https://poorprogrammer.wordpress.com"
+     }
   }
 ]

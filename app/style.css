@@ -20,6 +20,9 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
   border-color: transparent;
   min-height: 40px;
+  -webkit-transition: background-color .5s ease-in-out,padding .5s ease-in-out;
+  -moz-transition: background-color .5s ease-in-out,padding .5s ease-in-out;
+  transition: background-color .5s ease-in-out,padding .5s ease-in-out;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -32,6 +35,9 @@ body {
 
 .top-nav-collapse {
   background-color: white;
+  -webkit-transition: background-color .5s ease-in-out,padding .5s ease-in-out;
+  -moz-transition: background-color .5s ease-in-out,padding .5s ease-in-out;
+  transition: background-color .5s ease-in-out,padding .5s ease-in-out;
 }
 
 .top-nav-collapse .navbar-nav>li>a {
@@ -49,16 +55,16 @@ body {
 
     .navbar-default .navbar-nav>li>a {
       padding: 20px 15px;
-      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      transition: background .5s ease-in-out,padding .5s ease-in-out;
+      -webkit-transition: all .5s ease-in-out,padding .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out,padding .5s ease-in-out;
+      transition: all .5s ease-in-out,padding .5s ease-in-out;
     }
 
     .top-nav-collapse .navbar-nav>li>a {
       padding: 10px 15px;
-      -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-      transition: background .5s ease-in-out,padding .5s ease-in-out;
+      -webkit-transition: all .5s ease-in-out,padding .5s ease-in-out;
+      -moz-transition: all .5s ease-in-out,padding .5s ease-in-out;
+      transition: all .5s ease-in-out,padding .5s ease-in-out;
     }
 
     .top-nav-collapse {
@@ -169,7 +175,7 @@ body {
 /* Team */
 
 .team-header {
-  background-color: #DDDDDD;
+  background-color: #eee;
 }
 
 .team {

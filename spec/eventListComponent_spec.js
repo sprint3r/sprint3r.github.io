@@ -60,7 +60,7 @@ describe("Event List", function() {
     $httpBackend.flush();
   });
 
-  it("should get upcoming events and found 1 event", function() {
+  it("should get events and found only upcoming one (exclude passed events)", function() {
     fetchAPIWithData(getFacebookEvents());
     expect(ctrl.upcomingEvents.length).toEqual(1);
   });
@@ -77,7 +77,7 @@ describe("Event List", function() {
     expect(ctrl.upcomingEvents[0].date).toEqual(new Date("2020-12-01T09:00:00+0700"));
   });
 
-  it("should have upcoming events with results of C, B, A", function() {
+  it("should sort upcoming events by their start_time ascendingly", function() {
     var data = getFacebookEvents();
     var extendedData = [
       {
