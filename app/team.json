@@ -27,21 +27,30 @@
      }
   },
   {
-    "name": "Twin Panichsombat",
-    "intro": "Software development should be fun",
-    "image": "images/team/roofimon.jpg",
+    "name": "Weerasak Chongnguluam",
+    "intro": "",
+    "image": "images/team/iporsut.png",
     "media": {
       "name": "Blog",
-      "link": "http://roofimon.com"
+      "link": "https://medium.com/@iPorsut/"
     }
   },
   {
-     "name": "Phongsak Ritpitakphong",
-     "intro": "Business value and technical excellence balancer",
-     "image": "images/team/poorprogrammer.png",
+     "name": "Somkiat Puisungnoen",
+     "intro": "",
+     "image": "images/team/somkiat.jpg",
      "media": {
          "name": "Blog",
-         "link": "https://poorprogrammer.wordpress.com"
+         "link": "http://www.somkiat.cc/"
+     }
+  },
+  {
+     "name": "Kanokorn Chongnguluam",
+     "intro": "",
+     "image": "images/team/kanokon.jpg",
+     "media": {
+         "name": "Blog",
+         "link": "https://medium.com/@Kanokon"
      }
   }
 ]
