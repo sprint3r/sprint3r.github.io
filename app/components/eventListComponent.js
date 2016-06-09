@@ -107,7 +107,7 @@
 
   angular.module('sprint3rApp')
     .component('eventList', {
-      templateUrl: 'components/eventListComponent.html',
+      templateUrl: 'app/components/eventListComponent.html',
       controller: eventListController,
   });
 })();
