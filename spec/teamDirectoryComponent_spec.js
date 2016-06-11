@@ -11,7 +11,7 @@ describe("Team Directory", function() {
 
   it("should fetch team directory json from static file", function() {
     ctrl.$onInit();
-    $httpBackend.expectGET("team.json")
+    $httpBackend.expectGET("app/team.json")
       .respond([{"fullname": "Tester", "intro": "This is a test", "image": "images/test.jpg"}]);
     $httpBackend.flush();
   });
