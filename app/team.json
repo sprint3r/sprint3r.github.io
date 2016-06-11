@@ -2,7 +2,7 @@
   {
     "name": "Twin Panichsombat",
     "intro": "Software development should be fun",
-    "image": "app/images/team/roofimon.jpg",
+    "image": "assets/img/team/roofimon.jpg",
     "media": {
       "name": "Blog",
       "link": "http://roofimon.com"
@@ -11,7 +11,7 @@
   {
      "name": "Phongsak Ritpitakphong",
      "intro": "Business value and technical excellence balancer",
-     "image": "app/images/team/poorprogrammer.png",
+     "image": "assets/img/team/poorprogrammer.png",
      "media": {
          "name": "Blog",
          "link": "https://poorprogrammer.wordpress.com"
@@ -20,7 +20,7 @@
   {
      "name": "Chokchai Phatharamalai",
      "intro": "Hyper-productivity seeker",
-     "image": "app/images/team/juacompe.jpg",
+     "image": "assets/img/team/juacompe.jpg",
      "media": {
          "name": "Blog",
          "link": "https://storylog.co/juacompe"
@@ -29,7 +29,7 @@
   {
     "name": "Weerasak Chongnguluam",
     "intro": "",
-    "image": "app/images/team/iporsut.png",
+    "image": "assets/img/team/iporsut.png",
     "media": {
       "name": "Blog",
       "link": "https://medium.com/@iPorsut/"
@@ -38,7 +38,7 @@
   {
      "name": "Somkiat Puisungnoen",
      "intro": "",
-     "image": "app/images/team/somkiat.jpg",
+     "image": "assets/img/team/somkiat.jpg",
      "media": {
          "name": "Blog",
          "link": "http://www.somkiat.cc/"
@@ -47,7 +47,7 @@
   {
      "name": "Kanokorn Chongnguluam",
      "intro": "",
-     "image": "app/images/team/kanokon.jpg",
+     "image": "assets/img/team/kanokon.jpg",
      "media": {
          "name": "Blog",
          "link": "https://medium.com/@Kanokon"
