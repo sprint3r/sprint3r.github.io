@@ -73,16 +73,6 @@ body {
     }
   }
 
-.site-logo {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  height: 60px;
-}
-
-.menu {
-  float right:
-}
-
 .jumbotron {
   background-color: transparent;
   margin-bottom: 0px;
@@ -91,7 +81,8 @@ body {
 }
 
 .site-logo-big {
-  height: 200px;
+  width: 80%;
+  max-width: 365px;
   margin-bottom: 30px;
 }
 
