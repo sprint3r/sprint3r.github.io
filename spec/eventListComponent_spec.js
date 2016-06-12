@@ -37,14 +37,14 @@ describe("Event List", function() {
 
   it("should have upcoming events with date equals to 2020-05-30T09:00:00+0700", function() {
     fetchAPIWithData(getFacebookEvents());
-    expect(ctrl.upcomingEvents[0].date).toEqual(new Date("2020-05-30T09:00:00+0700"));
+    expect(ctrl.upcomingEvents[0].date).toEqual(moment("2020-05-30T09:00:00+0700"));
   });
 
   it("should have upcoming events with date equals to 2020-12-01T09:00:00+0700", function() {
     var data = getFacebookEvents();
     data.data[1].start_time = "2020-12-01T09:00:00+0700";
     fetchAPIWithData(data);
-    expect(ctrl.upcomingEvents[0].date).toEqual(new Date("2020-12-01T09:00:00+0700"));
+    expect(ctrl.upcomingEvents[0].date).toEqual(moment("2020-12-01T09:00:00+0700"));
   });
 
   it("should sort upcoming events by their start_time ascendingly", function() {

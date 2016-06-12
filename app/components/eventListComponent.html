@@ -15,8 +15,8 @@
             </div>
             <div class="event-detail">
                     <div class="event-date">
-                        <p class="month">{{event.date | date:'MMM'}}</p>
-                        <p class="date">{{event.date | date:'d'}}</p>
+                        <p class="month">{{event.date.format('MMM')}}</p>
+                        <p class="date">{{event.date.format('d')}}</p>
                     </div>
                     <div class="event-description">
                         <div class="event-description-container">

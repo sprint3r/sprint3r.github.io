@@ -12,96 +12,20 @@
           self.upcomingEvents.sort(compareDate);
           self.upcomingEvents = self.upcomingEvents.slice(0, 5);
       });
-
-      // self.upcomingEvents = getFacebookEvents().data.filter(isStartTimeAfterNow).map(addDate);
     };
 
     function isStartTimeAfterNow(event) {
-      return new Date(event.start_time) >= new Date();
+      return moment(event.start_time) >= moment();
     }
 
 
     function addDate(event) {
-      event.date = new Date(event.start_time);
+      event.date = moment(event.start_time);
       return event;
     }
 
     function compareDate(eventA, eventB) {
       return eventA.date - eventB.date;
-    }
-
-    function getFacebookEvents() {
-      return {
-        "data": [
-          {
-            "name": "Passed",
-            "start_time": "2017-05-01T09:00:00+0700",
-            "end_time": "2016-05-01T10:00:00+0700",
-            "id": 851344918315730,
-            "cover": {
-              "offset_x": 0,
-              "offset_y": 0,
-              "source": "",
-            },
-          },
-          {
-            "name": "A",
-            "start_time": "2020-05-30T09:00:00+0700",
-            "end_time": "2020-05-30T10:00:00+0700",
-            "id": 851344918315731,
-            "cover": {
-              "offset_x": 0,
-              "offset_y": 0,
-              "source": "",
-            },
-          },
-          {
-            "name": "A",
-            "start_time": "2020-05-30T09:00:00+0700",
-            "end_time": "2020-05-30T10:00:00+0700",
-            "id": 851344918315731,
-            "description": "sfk;jsadklfjaskl;dfjlk;asdjfkl;sajdfcnjsadiocfmpjsiofnwoipevfuoweunriovpeunvfpioeufmoeufpcmerjcfio pnerhvpfmoercjniopmrcfoermcfieorpmj",
-            "cover": {
-              "offset_x": 0,
-              "offset_y": 0,
-              "source": "",
-            },
-          },
-          {
-            "name": "A",
-            "start_time": "2020-05-30T09:00:00+0700",
-            "end_time": "2020-05-30T10:00:00+0700",
-            "id": 851344918315731,
-            "cover": {
-              "offset_x": 0,
-              "offset_y": 0,
-              "source": "",
-            },
-          },
-          {
-            "name": "A",
-            "start_time": "2020-05-30T09:00:00+0700",
-            "end_time": "2020-05-30T10:00:00+0700",
-            "id": 851344918315731,
-            "cover": {
-              "offset_x": 0,
-              "offset_y": 0,
-              "source": "",
-            },
-          },
-          {
-            "name": "A",
-            "start_time": "2020-05-30T09:00:00+0700",
-            "end_time": "2020-05-30T10:00:00+0700",
-            "id": 851344918315731,
-            "cover": {
-              "offset_x": 0,
-              "offset_y": 0,
-              "source": "",
-            },
-          }
-        ]
-      };
     }
   }
 
