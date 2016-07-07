@@ -52,5 +52,14 @@
          "name": "Blog",
          "link": "https://medium.com/@Kanokon"
      }
+  },
+  {
+     "name": "Tanakrit Saisillapee",
+     "intro": "Hire me. If you can.",
+     "image": "assets/img/team/tanakrit.jpg",
+     "media": {
+         "name": "Blog",
+         "link": "https://tanakritsai.wordpress.com/"
+     }
   }
 ]
