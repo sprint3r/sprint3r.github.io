@@ -52,5 +52,23 @@
          "name": "Blog",
          "link": "https://medium.com/@Kanokon"
      }
+  },
+  {
+     "name": "Tanakrit Saisillapee",
+     "intro": "Hire me, if you can",
+     "image": "assets/img/team/tanakrit.jpg",
+     "media": {
+         "name": "Website",
+         "link": "https://tanakritsai.wordpress.com/"
+     }
+  },
+  {
+     "name": "Kamonlojn Phrompang",
+     "intro": "The kingkong who does UX",
+     "image": "assets/img/team/kamonlojn.jpg",
+     "media": {
+         "name": "Blog",
+         "link": "https://medium.com/@kamonlojnphrompang"
+     }
   }
 ]
