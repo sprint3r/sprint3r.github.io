@@ -32,7 +32,7 @@
     "image": "assets/img/team/iporsut.png",
     "media": {
       "name": "Blog",
-      "link": "https://medium.com/@iPorsut/"
+      "link": "https://iporsut.blogspot.com"
     }
   },
   {
@@ -46,7 +46,7 @@
   },
   {
      "name": "Kanokorn Chongnguluam",
-     "intro": "",
+     "intro": "Girls who code",
      "image": "assets/img/team/kanokon.jpg",
      "media": {
          "name": "Blog",
@@ -70,5 +70,14 @@
          "name": "Blog",
          "link": "https://medium.com/@kamonlojnphrompang"
      }
-  }
+},
+ {
+    "name": "Anuchit Prasertsang",
+    "intro": "",
+    "image": "assets/img/team/anuchit.png",
+    "media": {
+        "name": "Blog",
+        "link": "https://medium.com/@anuchit.prasertsang"
+    }
+ }
 ]
